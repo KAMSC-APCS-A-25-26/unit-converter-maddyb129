@@ -32,7 +32,10 @@ public class TempConverter {
                     System.out.println("Temp in Fahrenheit: " + tempFa);
                     break;
 
-
+                case 3:
+                    System.out.print("Goodbye!");
+                    running = false;
+                    break;
             }
 
         }
