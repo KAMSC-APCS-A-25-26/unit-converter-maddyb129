@@ -16,7 +16,7 @@ public class TempConverter {
             System.out.println("1. Convert Fahrenheit to Celsius");
             System.out.println("2. Convert Celsius to Fahrenheit");
             System.out.println("3. Exit");
-            System.out.print("Enter your choice (1, 2, or 3):  ");
+            System.out.print("\nEnter your choice (1, 2, or 3):  ");
             int choice= sc.nextInt();
             switch(choice){
                 case 1:
@@ -42,6 +42,8 @@ public class TempConverter {
                     System.out.print("Goodbye!");
                     running = false;
                     break;
+                default:
+                    System.out.println("Invalid menu choice.\n");
             }
         }
     }
