@@ -12,7 +12,7 @@ public class TempConverter {
         boolean running = true;
         while (running)
         {
-            System.out.println("Choose conversion direction:");
+            System.out.println("\nChoose conversion direction:");
             System.out.println("1. Convert Fahrenheit to Celsius");
             System.out.println("2. Convert Celsius to Fahrenheit");
             System.out.println("3. Exit");
@@ -26,7 +26,6 @@ public class TempConverter {
                     System.out.println("\nConversion Results:");
                     System.out.println("Fahrenheit: " + tempF);
                     System.out.println("Celsius: " + tempC);
-                    System.out.println(" ");
                     break;
                 case 2:
                     System.out.print("Enter temperature in Celsius:  ");
@@ -35,7 +34,6 @@ public class TempConverter {
                     System.out.println("\nConversion Results:");
                     System.out.println("Celsius: " + tempCe);
                     System.out.println("Fahrenheit: " + tempFa);
-                    System.out.println(" ");
                     break;
 
                 case 3:
