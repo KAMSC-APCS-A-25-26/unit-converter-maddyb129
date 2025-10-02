@@ -20,16 +20,18 @@ public class TempConverter {
             int choice= sc.nextInt();
             switch(choice){
                 case 1:
-                    System.out.println("Enter temperature in Fahrenheit:  ");
+                    System.out.print("Enter temperature in Fahrenheit:  ");
                     double tempF = sc.nextDouble();
                     double tempC =  (tempF - 32) * 5/9;
-                    System.out.println("Temp in Celsius: " + tempC);
+                    System.out.println(tempF + " degrees Fahrenheit " + "is " + tempC + " degrees Celsius");
+                    System.out.println(" ");
                     break;
                 case 2:
-                    System.out.println("Enter temperature in Celsius:  ");
+                    System.out.print("Enter temperature in Celsius:  ");
                     double tempCe = sc.nextDouble();
                     double tempFa =  (tempCe * (9/5)) + 32;
-                    System.out.println("Temp in Fahrenheit: " + tempFa);
+                    System.out.println(tempCe + " degrees Celsius " + "is " + tempFa + " degrees Fahrenheit");
+                    System.out.println(" ");
                     break;
 
                 case 3:
@@ -37,7 +39,6 @@ public class TempConverter {
                     running = false;
                     break;
             }
-
         }
     }
 }
