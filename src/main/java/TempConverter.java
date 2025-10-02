@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class TempConverter {
     public static void main(String[] args) {
         // TODO: Implement temperature converter
@@ -7,5 +8,34 @@ public class TempConverter {
         // - Use formulas: C = (F - 32) * 5/9 and F = C * 9/5 + 32
         // - Display conversion results
         // - Handle invalid menu choices
+        Scanner sc = new Scanner(System.in);
+        boolean running = true;
+        while (running)
+        {
+            System.out.println("---TempConverter Menu---");
+            System.out.println("1. Convert Fahrenheit to Celsius");
+            System.out.println("2. Convert Celsius to Fahrenheit");
+            System.out.println("3. Exit");
+            System.out.print("What is your choice:  ");
+            int choice= sc.nextInt();
+            switch(choice){
+                case 1:
+                    System.out.println("Enter temperature in Fahrenheit:  ");
+                    double tempF = sc.nextDouble();
+                    double tempC =  (tempF - 32) * 5/9;
+                    System.out.println("Temp in Celsius: " + tempC);
+                    break;
+                case 2:
+                    System.out.println("Enter temperature in Celsius:  ");
+                    double tempC = sc.nextDouble();
+                    double tempF =  (tempC * (9/5)) + 32;
+                    System.out.println("Temp in Fahrenheit: " + tempF);
+                    break;
+
+
+            }
+
+
+        }
     }
 }
