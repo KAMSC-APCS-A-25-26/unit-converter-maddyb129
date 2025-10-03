@@ -22,7 +22,7 @@ public class TempConverter {
                 case 1:
                     System.out.print("Enter temperature in Fahrenheit:  ");
                     double tempF = sc.nextDouble();
-                    double tempC =  (tempF - 32) * 0.556;
+                    double tempC =  (tempF - 32) * 5/9;
                     System.out.println("\nConversion Results:");
                     System.out.println("Fahrenheit: " + tempF);
                     System.out.printf("Celsius: %.1f\n\n", tempC);
