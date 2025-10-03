@@ -24,7 +24,7 @@ public class TempConverter {
                     double tempF = sc.nextDouble();
                     double tempC =  (tempF - 32) * 0.55555555555;
                     System.out.println("\nConversion Results:");
-                    System.out.printf("Fahrenheit: %.1f\n", tempF);
+                    System.out.println("Fahrenheit: " + tempF);
                     System.out.printf("Celsius: %.1f\n\n", tempC);
                     break;
                 case 2:
