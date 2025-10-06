@@ -22,18 +22,18 @@ public class TempConverter {
                 case 1:
                     System.out.print("Enter temperature in Fahrenheit:  ");
                     double tempF = sc.nextDouble();
-                    double tempC =  (tempF - 32) * 5/9;
+                    double tempC =  (tempF - 32) * (5.0/9.0);
                     System.out.println("\nConversion Results:");
-                    System.out.printf("Fahrenheit: %.1f\n", tempF);
-                    System.out.printf("Celsius: %.2f\n\n", tempC);
+                    System.out.println("Fahrenheit: " + tempF);
+                    System.out.println("Celsius: " + tempC);
                     break;
                 case 2:
                     System.out.print("Enter temperature in Celsius:  ");
                     double tempCe = sc.nextDouble();
-                    double tempFa =  (tempCe * 1.8) + 32;
+                    double tempFa =  tempCe * 9/5 + 32;
                     System.out.println("\nConversion Results:");
-                    System.out.printf("Celsius: %.1f\n", tempCe);
-                    System.out.printf("Fahrenheit: %.1f\n", tempFa);
+                    System.out.println("Celsius: " + tempCe);
+                    System.out.println("Fahrenheit: " + tempFa);
                     System.out.println(" ");
                     break;
 
@@ -43,7 +43,6 @@ public class TempConverter {
                     break;
                 default:
                     System.out.println("Invalid menu choice.");
-                    break;
             }
         }
     }
